@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/homeRowNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:text="Specterbae"
+            app:layout_constraintEnd_toEndOf="@+id/homePp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/homePp"
+            android:layout_width="99dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="5dp"
+            app:civ_border_color="@color/yellow_project"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeRowNick"
+            app:srcCompat="@drawable/avatarnew" />
+
+        <ImageView
+            android:id="@+id/homeRowGameImg"
+            android:layout_width="39dp"
+            android:layout_height="31dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/lol_logo" />
+
+        <TextView
+            android:id="@+id/homeRowTime"
+            android:layout_width="40dp"
+            android:layout_height="14dp"
+            android:text="homeRowTime"
+            android:textAlignment="center"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/homeRowGameImg" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/postJoinButton"
+            android:clickable="true"
+            android:layout_width="94dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="KATIL"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/rowLinearLayout"
+            app:layout_constraintStart_toStartOf="@+id/rowLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/rowLinearLayout" />
+
+        <LinearLayout
+            android:id="@+id/rowLinearLayout"
+            android:layout_width="244dp"
+            android:layout_height="51dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/homePp"
+            app:layout_constraintTop_toTopOf="@+id/homePp">
+
+            <ImageView
+                android:id="@+id/home_check_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/active" />
+
+            <ImageView
+                android:id="@+id/home_check_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/active" />
+
+            <ImageView
+                android:id="@+id/home_check_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/active" />
+
+            <ImageView
+                android:id="@+id/home_check_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/deactive" />
+
+            <ImageView
+                android:id="@+id/home_check_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/deactive" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

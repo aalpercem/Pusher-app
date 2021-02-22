@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_project">#1c1b1b</color>
+    <color name="yellow_project">#fcba03</color>
+    <color name="black2_project">#000005</color>
+    <color name="black3_project">#161515</color>
+    <color name="red_project">#E3242B</color>
+    <color name="grey_project">#ADB5BD</color>
+    <color name="splash_background">#fdeddb</color>
+</resources>
